@@ -5,6 +5,7 @@
       <Thumbnail :key="movie.id" :movieProp="movie" /> 
     </div>
     </div>
+    
 </template>
 
 <script setup>

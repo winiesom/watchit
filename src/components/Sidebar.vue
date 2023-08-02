@@ -1,6 +1,6 @@
 <template>
     <div class="flex z-40 items-center w-[120px] m-5 relative">
-    <div>
+    <div class="sm:block hidden">
 
       <div class="py-2 mx-10 my-6 active:border-b-4 border-b-yellow-700">
         <Magnify fillColor="#FFFFFF" :size="40" class="cursor-pointer" />

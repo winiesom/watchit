@@ -1,4 +1,8 @@
 <template>
+<div
+    class="p-2 group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50"
+    @mouseenter="handleMouseEnter"
+  >
   <div class="p-2 group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50">
     <img
         :src="movieProp.backdrop_path
@@ -21,6 +25,7 @@
         </p>
     </div>
   </div>
+   </div>
 </template>
 
 <script setup>
