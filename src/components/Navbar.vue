@@ -8,7 +8,7 @@
         </h2>
       </div>
     </div>
-    <div class="absolute top-0 right-0 bg-gradient-to-l from-teal-950 h-10 w-1/12" />
+    <div class="absolute top-0 right-0 bg-gradient-to-l from-slate-950 h-10 w-1/12" />
   </nav>
 </template>
 

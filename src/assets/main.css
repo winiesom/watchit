@@ -4,6 +4,6 @@
 
 @layer base {
   body {
-      @apply bg-teal-950 aspect-square text-gray-300;
+      @apply bg-slate-950 aspect-square text-gray-300;
   }
 }
