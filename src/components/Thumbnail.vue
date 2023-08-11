@@ -29,7 +29,7 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue';
+// import { defineProps } from 'vue';
 
 import ThumbUpOutline from 'vue-material-design-icons/ThumbUpOutline.vue';
 import ThumbUp from 'vue-material-design-icons/ThumbUp.vue';
