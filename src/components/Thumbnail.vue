@@ -8,8 +8,8 @@
         :src="movieProp.backdrop_path
         ? `${BASE_URL}${movieProp.backdrop_path}`
         : `${BASE_URL}${movieProp.poster_path}`"
-        height="1080"
-        width="1920"
+        height="600"
+        width="800"
         :alt="movieProp.title"
     />
 
