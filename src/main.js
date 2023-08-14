@@ -36,7 +36,7 @@ Sentry.init({
   integrations: [
     new Sentry.BrowserTracing({
       // Set 'tracePropagationTargets' to control for which URLs distributed tracing should be enabled
-      tracePropagationTargets: ["https://vue-watchit.netlify.app/"],
+      tracePropagationTargets: ["localhost", "https://vue-watchit.netlify.app/"],
       routingInstrumentation: Sentry.vueRouterInstrumentation(router),
     }),
     new Sentry.Replay(),
