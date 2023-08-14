@@ -20,8 +20,18 @@ const movies = ref([]);
 const route = useRoute(); // Access the current route information
 
 // Fetch movies on component mount
-onMounted(async () => {
-  await fetchMovies();
+onMounted(route, async () => {
+  if(route.query.genre) {
+    const genreKey = route.query.genre;
+    let apiUrl = '';
+    if (requests[genreKey]) {
+      apiUrl = `https://api.themoviedb.org/3/${requests[genreKey].url}`;
+    } else {
+      // If the genreKey does not exist in requests, default to fetchTrending
+      apiUrl = `https://api.themoviedb.org/3/${requests.fetchTrending.url}`;
+    }
+  await fetchMovies(apiUrl);
+  }
 });
 
 // Fetch movies when the route changes
