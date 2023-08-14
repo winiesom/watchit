@@ -32,11 +32,11 @@ const router = createRouter({
 
 Sentry.init({
   app,
-  dsn: "https://13be458e60407afbc6f25fbd6f7d2716@o4505703098286080.ingest.sentry.io/4505703128367104",
+  dsn: "https://2a65fef87f270921e2273f2fd723ab2c@o4505703098286080.ingest.sentry.io/4505703726448640",
   integrations: [
     new Sentry.BrowserTracing({
       // Set 'tracePropagationTargets' to control for which URLs distributed tracing should be enabled
-      tracePropagationTargets: ["localhost", "https://vue-watchit.netlify.app/"],
+      tracePropagationTargets: ["https://vue-watchit.netlify.app/"],
       routingInstrumentation: Sentry.vueRouterInstrumentation(router),
     }),
     new Sentry.Replay(),
