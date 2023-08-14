@@ -57,8 +57,7 @@ const fetchTrendingMovies = async () => {
 };
 
 const fetchMovies = async (apiUrl) => {
-  const totalPages = 10; // Fetch a total of 10 pages (100 results)
-  await movieStore.fetchMovies(apiUrl, totalPages);
+  await movieStore.fetchMovies(apiUrl);
 };
 
 // Update the visible movies whenever movieResults changes

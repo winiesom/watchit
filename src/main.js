@@ -32,7 +32,7 @@ const router = createRouter({
 
 Sentry.init({
   app,
-  dsn: "https://2a65fef87f270921e2273f2fd723ab2c@o4505703098286080.ingest.sentry.io/4505703726448640",
+  dsn: "https://176cde0f2df783503b14136740d8118b@o4505703098286080.ingest.sentry.io/4505703868465152",
   integrations: [
     new Sentry.BrowserTracing({
       // Set 'tracePropagationTargets' to control for which URLs distributed tracing should be enabled

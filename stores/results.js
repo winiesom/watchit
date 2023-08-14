@@ -5,9 +5,9 @@ export const useMovieStore = defineStore('movieStore', {
     movieResults: [],
   }),
   actions: {
-    async fetchMovies(apiUrl, totalPages) {
+    async fetchMovies(apiUrl, totalPages = 1) {
       try {
-        const resultsPerPage = 100; // The TMDb API supports up to 20 results per page
+        const resultsPerPage = 10; // The TMDb API supports up to 20 results per page
 
         const allMovieResults = [];
 
