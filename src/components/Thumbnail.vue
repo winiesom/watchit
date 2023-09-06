@@ -8,9 +8,10 @@
         :src="movieProp.backdrop_path
         ? `${BASE_URL}${movieProp.backdrop_path}`
         : `${BASE_URL}${movieProp.poster_path}`"
-        height="600"
-        width="800"
+        height="300"
+        width="400"
         :alt="movieProp.title"
+        loading="lazy"
     />
 
     <div class="p-2">

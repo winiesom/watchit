@@ -1,15 +1,14 @@
-import { sentryVitePlugin } from "@sentry/vite-plugin";
 import { fileURLToPath, URL } from 'node:url'
 
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
+import visualizer from 'rollup-plugin-visualizer';
+
+
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(), sentryVitePlugin({
-    org: "winiesom",
-    project: "javascript-vue"
-  })],
+  plugins: [vue(), visualizer()],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
